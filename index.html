@@ -69,7 +69,7 @@ s.parentNode.insertBefore(py, s);
 <!-- What Time is it Mr. Wolf -->
 <script>
 const d = new Date();
-let text = d.toLocaleTimeString('en-US',{hour: '2-digit', minute: '2-digit'});
+let text = d.toLocaleTimeString(navigator.language, {hour: '2-digit', minute: '2-digit'});
 document.getElementById("demo").innerHTML = text;
 </script>
 
