@@ -68,20 +68,25 @@ s.parentNode.insertBefore(py, s);
 })(document, 'script', 'plmxbtn');</script>
 
 
-<!-- What Time is it Mr. Wolf -->
+<!-- What Time is it? -->
 <script>
 const d = new Date();
 let text = d.toLocaleTimeString(navigator.language, {hour: '2-digit', minute: '2-digit'});
 document.getElementById("demo").innerHTML = text;
 </script>
 
-
-
-
+<!--  style parameters below,
+      /* used if the image is unavailable */
+      /* dynamic viewport height */
+      /* fill at least the height of the viewport */
+      /* Resize the background image to cover the entire container */
+-->
 <!-- Background image -->
 <div class="bg-image"
      style="background-image: url('https://birchstone.github.io/z/bootstrap/img/rmss_op.jpg');
-            height: 100vh;
+            background-color: #cccccc;
+            height: 100dvh;
+            min-height: 100dvh;
             background-size: cover">
 
             <!-- p>&nbsp;</p -->
